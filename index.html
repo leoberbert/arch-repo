@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório Arch – Em Construção</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 650px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(6px);
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+
+        .loader {
+            margin: 25px auto 0;
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #00bcd4;
+            border-radius: 50%;
+            animation: spin 1.2s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0px); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        a {
+            color: #00eaff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Repositório Arch em Construção</h1>
+    <p>Estamos preparando o ambiente para hospedar pacotes e componentes da distribuição.<br>
+       Em breve este repositório estará disponível em produção.</p>
+
+    <div class="loader"></div>
+
+    <div class="footer">
+        <p>Powered by <a href="https://cloudflare.com" target="_blank">Cloudflare Pages</a> • HTML5 • Arch Linux</p>
+    </div>
+</div>
+
+</body>
+</html>
